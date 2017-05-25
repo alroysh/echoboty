@@ -491,17 +491,25 @@
 								);
 			}
 		}
-		else if($message['type']=='sticker')
+		else if(!empty($groupid))
 		{	
 			$balas = array(
-									'replyToken' => $replyToken,														
-									'messages' => array(
-										array(
-												'type' => 'text',									
-												'text' => 'Terimakasih stikernya... '										
-											)
-									)
+				'userId' => $profil->$userId,
+				'replyToken' => $replyToken,														
+				'messages' => array(
+						array(
+								'type' => 'text',									
+								'text' => 'Bye semua'
+							
+								)
+								)
 								);
+			$client->replyMessage($balas);
+			sleep(10);
+			$client->leave($groupid);
+			
+			
+			
 	$response = $bot->leaveRoom('<groupId>');
 	echo $response->getHTTPStatus() . ' ' . $response->getRawBody();		
 		}
