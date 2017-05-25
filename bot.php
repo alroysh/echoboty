@@ -517,26 +517,3 @@
 		//$result = ob_get_clean();
 		file_put_contents('./balasan.json',$result);
 		$client->replyMessage($balas);
- public function handle()
-    {
-        $text = $this->textMessage->getText();
-        $replyToken = $this->textMessage->getReplyToken();
-        $this->logger->info("Got text message from $replyToken: $text");
-        switch ($text) {
-            case 'profile':
-                $userId = $this->textMessage->getUserId();
-                $this->sendProfile($replyToken, $userId);
-                break;
-            case 'bye':
-                if ($this->textMessage->isRoomEvent()) {
-                    $this->bot->replyText($replyToken, 'Leaving room');
-                    $this->bot->leaveRoom($this->textMessage->getRoomId());
-                    break;
-                }
-                if ($this->textMessage->isGroupEvent()) {
-                    $this->bot->replyText($replyToken, 'Leaving group');
-                    $this->bot->leaveGroup($this->textMessage->getGroupId());
-                    break;
-                }
-                $this->bot->replyText($replyToken, 'Bot cannot leave from 1:1 chat');
-                break;
