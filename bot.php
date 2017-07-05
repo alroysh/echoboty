@@ -352,20 +352,22 @@
 				'messages' => array(
 					      array(
 						   'type' => 'template',	
-						   'altText' => 'Nomor Velda',
+						   'altText' => 'Creator Bot',
 						   'template' =>[
-						  'type' => 'confirm',
-							'text' => 'Nomor Velda',
+						  'type' => 'buttons',	
+						   'thumbnailImageUrl' => 'https://s-media-cache-ak0.pinimg.com/600x315/9e/e4/a6/9ee4a64469336c1109775f11f25363ff.jpg',
+							'title' => 'Bot Creator',
+							'text' => 'Format Order',
 							'actions' => [
 							[
 							'type' => 'message',
-							    'label' => 'TSEL',														
-							'text' => '081287717545' 
+							    'label' => 'Add Line',
+							    'uri' => 'http://line.me/ti/p/~alroysugiarto'
 							],
 							[
 							'type' => 'message',
-							    'label' => 'XL',
-							    'text' => '085921483878'
+							    'label' => 'Follow Instagram',
+							    'uri' => 'https://www.instagram.com/alroysh_/'
 							]	
 							]
 									]
