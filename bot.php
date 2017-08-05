@@ -47,6 +47,60 @@
 		$random1 = (rand()%100);
 		$random2 = (rand()%200);
 		$random3 = (rand()%300);
+
+
+if(!is_null($json['displayName']))
+{
+
+  foreach ($json as $type => $value)
+  {
+     if($type == 'displayName')
+     {
+        $name = $value; // send reply text name
+     }
+  }
+}
+
+
+// Call DataBase
+if (!is_null($datas['id'])) 
+{
+    foreach ($datas as $type => $value) 
+    {
+        
+        if($type == 'id')
+        {
+          $id = $value;
+        }
+        elseif($type == 'humidity')
+        {
+          $humidity = $value;
+        }
+        elseif($type == 'tempC') 
+        {
+          $tempC = $value;
+        }
+        elseif($type == 'tempF') 
+        {
+          $tempF = $value;          
+        }
+        elseif($type == 'heatIndexC') 
+        {
+          $heatIndexC = $value;         
+        }
+        elseif($type == 'heatIndexF') 
+        {
+          $heatIndexF = $value;        
+        }
+        elseif($type == 'datetime') 
+        {
+          $datetime = $value;       
+        }   
+    } 
+}
+
+
+
 	if($message['type']=='text')
 		{
 			if($pesan_datang=='Halo')
@@ -219,7 +273,7 @@
 				$get_sub = array();
 				$aa =   array(
 								'type' => 'text',									
-								'text' => 'Wib  : \n'. $wib
+								'text' => "อุณหภูมิ ตอนนี้จะอยู่ที่ ".$tempC." (°C) ค่ะ และ ".$tempF." (°F) ค่ะ\n - ค่าเฉลี่ยจะอยู่ที่ ".$heatIndexC." (°C) ค่ะ และ ".$heatIndexF." (°F) ค่ะ\n อับเดจล่าสุดเมื่อวันที่ ".$datetime." ค่ะ"
 							);
 				array_push($get_sub,$aa);	
 				$get_sub[] = array(
