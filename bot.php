@@ -50,13 +50,12 @@
 		$a = $pesan_datang;
 		$b = $pesan_datang;
 		$hasil = $a+$b;
-
 if($message['type']=='text')
-		{
-	if($message['type']=='text')
 		{
 			if($pesan_datang=='Halo')
 			{
+
+
 				$balas = array(
 									'replyToken' => $replyToken,														
 									'messages' => array(
@@ -66,6 +65,7 @@ if($message['type']=='text')
 											)
 									)
 								);
+
 			}
 			else
 					if($pesan_datang=='link fotoku')
