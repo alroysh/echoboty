@@ -62,6 +62,9 @@ function CallLineGetName($access_token,$userId)
   curl_close($ch);
   return $result;
 }
+$result = CallLineGetName($access_token,$userId);
+$json = json_decode($result,TRUE); // CallLineGetName();
+
 if(!is_null($json['displayName']))
 {
 
