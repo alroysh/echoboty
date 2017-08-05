@@ -98,7 +98,7 @@ if($message['type']=='text')
 									'messages' => array(
 										array(
 												'type' => 'text',					
-												'text' => 'อุณหภูมิ ตอนนี้จะอยู่ที่ '.$tempC.' (°C) ค่ะ และ ".$tempF.' (°F) ค่ะ\n - ค่าเฉลี่ยจะอยู่ที่ '.$heatIndexC.' (°C) ค่ะ และ ".$heatIndexF.' (°F) ค่ะ\n อับเดจล่าสุดเมื่อวันที่ '.$datetime.' ค่ะ';
+												'text' => 'Date ' .$datetime
 											)
 									)
 								);
