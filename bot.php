@@ -28,7 +28,7 @@
 		  }
 		}
 		*/
-		$userId 	= $client->parseEvents()[0]['source']['userId'];
+                $userId 	= $client->parseEvents()[0]['source']['userId'];
 		$replyToken = $client->parseEvents()[0]['replyToken'];
 		$timestamp	= $client->parseEvents()[0]['timestamp'];
 		$message 	= $client->parseEvents()[0]['message'];
@@ -47,10 +47,7 @@
 		$random1 = (rand()%100);
 		$random2 = (rand()%200);
 		$random3 = (rand()%300);
-		$a = $pesan_datang;
-		$b = $pesan_datang;
-		$hasil = $a+$b;
-if($message['type']=='text')
+	if($message['type']=='text')
 		{
 			if($pesan_datang=='Halo')
 			{
