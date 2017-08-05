@@ -50,6 +50,16 @@
 		$a = $pesan_datang;
 		$b = $pesan_datang;
 		$hasil = $a+$b;
+ 		 
+
+    function getname($name,$access_token,$userId){
+    $url = 'https://api.line.me/v2/bot/profile/'.$userId;
+    $result = getname($name,$access_token,$userId);
+	  if ($type == 'userId') {
+          $userId = $value;
+          echo "$userId\n";
+
+
 	if($message['type']=='text')
 		{
 			if($pesan_datang=='Halo')
@@ -522,7 +532,6 @@
 								);
 			}
 		}
-		if ($pesan_datang=='/bye'){
 		else if(!empty($groupid))
 		{	
 			$balas = array(
@@ -544,7 +553,6 @@
 			
 	$response = $bot->leaveRoom('<groupId>');
 	echo $response->getHTTPStatus() . ' ' . $response->getRawBody();		
-		}
 		}
 		$result =  json_encode($balas);
 		//$result = ob_get_clean();
