@@ -88,6 +88,23 @@ if (!is_null($datas['id']))
 }
 
 
+
+if($message['type']=='text')
+		{
+			if($pesan_datang=='suhu')
+			{
+				$balas = array(
+									'replyToken' => $replyToken,														
+									'messages' => array(
+										array(
+												'type' => 'text',					
+												'text' => 'อุณหภูมิ ตอนนี้จะอยู่ที่ '.$tempC.' (°C) ค่ะ และ ".$tempF.' (°F) ค่ะ\n - ค่าเฉลี่ยจะอยู่ที่ '.$heatIndexC.' (°C) ค่ะ และ ".$heatIndexF.' (°F) ค่ะ\n อับเดจล่าสุดเมื่อวันที่ '.$datetime.' ค่ะ';
+											)
+									)
+								);
+			}
+			else
+
 	if($message['type']=='text')
 		{
 			if($pesan_datang=='Halo')
