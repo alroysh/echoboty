@@ -219,7 +219,7 @@
 				$get_sub = array();
 				$aa =   array(
 								'type' => 'text',									
-								'text' => 'Wib  : \n'. $wib 'Wita'
+								'text' => 'Wib  : \n'. $wib
 							);
 				array_push($get_sub,$aa);	
 				$get_sub[] = array(
