@@ -522,6 +522,7 @@
 								);
 			}
 		}
+		if ($pesan_datang=='/bye'){
 		else if(!empty($groupid))
 		{	
 			$balas = array(
@@ -543,6 +544,7 @@
 			
 	$response = $bot->leaveRoom('<groupId>');
 	echo $response->getHTTPStatus() . ' ' . $response->getRawBody();		
+		}
 		}
 		$result =  json_encode($balas);
 		//$result = ob_get_clean();
