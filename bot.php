@@ -91,20 +91,6 @@ if (!is_null($datas['id']))
 
 if($message['type']=='text')
 		{
-			if($pesan_datang=='suhu')
-			{
-				$balas = array(
-									'replyToken' => $replyToken,														
-									'messages' => array(
-										array(
-												'type' => 'text',					
-												'text' => $datetime
-											)
-									)
-								);
-			}
-			else
-
 	if($message['type']=='text')
 		{
 			if($pesan_datang=='Halo')
