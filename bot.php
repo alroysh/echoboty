@@ -51,13 +51,41 @@
 		$b = $pesan_datang;
 		$hasil = $a+$b;
  		 
-
-    function getname($name,$access_token,$userId){
-    $url = 'https://api.line.me/v2/bot/profile/'.$userId;
-    $result = getname($name,$access_token,$userId);
-	  if ($type == 'userId') {
-          $userId = $value;
-          echo "$userId\n";
+if (!is_null($datas['id'])) 
+{
+    foreach ($datas as $type => $value) 
+    {
+        
+        if($type == 'id')
+        {
+          $id = $value;
+        }
+        elseif($type == 'humidity')
+        {
+          $humidity = $value;
+        }
+        elseif($type == 'tempC') 
+        {
+          $tempC = $value;
+        }
+        elseif($type == 'tempF') 
+        {
+          $tempF = $value;          
+        }
+        elseif($type == 'heatIndexC') 
+        {
+          $heatIndexC = $value;         
+        }
+        elseif($type == 'heatIndexF') 
+        {
+          $heatIndexF = $value;        
+        }
+        elseif($type == 'datetime') 
+        {
+          $datetime = $value;       
+        }   
+    } 
+}
 
 
 	if($message['type']=='text')
