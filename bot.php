@@ -289,7 +289,7 @@ if (!is_null($datas['id']))
 				$get_sub = array();
 				$aa =   array(
 								'type' => 'text',									
-								'text' => 'sekarang '.$datetime
+								'text' => 'Wib :'. $wib
 							);
 				array_push($get_sub,$aa);	
 				$get_sub[] = array(
