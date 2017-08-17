@@ -28,7 +28,7 @@
 		  }
 		}
 		*/
-                $userId 	= $client->parseEvents()[0]['source']['userId'];
+        $userId 	= $client->parseEvents()[0]['source']['userId'];
 		$replyToken = $client->parseEvents()[0]['replyToken'];
 		$timestamp	= $client->parseEvents()[0]['timestamp'];
 		$message 	= $client->parseEvents()[0]['message'];
@@ -50,9 +50,7 @@
 		$userx = $message['text'];
 		$data = explode(":", $userx);
 		$datac = "/ig:".$data[1]."";
-		$api = file_get_contents("http://propana.otoreport.com/harga.js.php");
-		$anu = explode('<td class="center">A5</td>', $api);
-		$datab = "qwerty";
+		$datab = "/wiki:".$data[1]."";
 
 function CallLineGetName($access_token,$userId)
 {
@@ -421,8 +419,9 @@ if (!is_null($datas['id']))
 			}
 		else if($pesan_datang==$datab)
 		{
-		$api = file_get_contents("http://propana.otoreport.com/harga.js.php");
-		$text3 = "Harga ".$anu[1].
+		$api_wiki = file_get_contents("https://id.wikipedia.org/wiki/".$data[1]."/?__a=1");
+		$jss = json_decode($api_wiki);
+		$text3 = "Harga ".$data[1].
 		$balas = array(
 		'replyToken' => $replyToken,														
 		'messages' => array(
