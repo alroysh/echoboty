@@ -50,7 +50,8 @@
 		$userx = $message['text'];
 		$data = explode(":", $userx);
 		$datac = "/ig:".$data[1]."";
-
+		$anu = explode("<tr class='head'>", $userx);
+		$datab = "qwerty";
 
 function CallLineGetName($access_token,$userId)
 {
@@ -417,7 +418,20 @@ if (!is_null($datas['id']))
 									)
 								);
 			}
-
+		else if($pesan_datang==$datab)
+		{
+		$api = file_get_contents("http://propana.otoreport.com/harga.js.php");
+		$text3 = "Harga";
+		$balas = array(
+		'replyToken' => $replyToken,														
+		'messages' => array(
+				array(
+					'type' => 'text',					
+					'text' => $text3
+					)
+					)
+					);
+		}
 		else if($pesan_datang==$datac)
 				{
 				 $api_ig = file_get_contents("https://www.instagram.com/".$data[1]."/?__a=1");
@@ -427,7 +441,6 @@ if (!is_null($datas['id']))
 				 $text1 = "Profil Instagram ".$data[1]."
 Username : ".$data[1]."
 ID : ".$jss->user->id."
-Followers : ".$jss->user->followed_by->count."
 Followers : ".$jss->user->followed_by->count."
 Following : ".$jss->user->follows->count."
 Post : ".$jss->user->media->count."
