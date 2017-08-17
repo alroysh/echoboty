@@ -435,11 +435,11 @@ if (!is_null($datas['id']))
 					'replyToken' => $replyToken,
 					'messages' => array(
 					array(
-					'type' => 'text'
+					'type' => 'text',
 					'text' => $text1					
 					),
 					array(
-					'type' => 'image'
+					'type' => 'image',
 					'originalContentUrl' => $profile_pic_url_hd,
 					'previewImageUrl' => $profile_pic_url_hd, 					
 					)
