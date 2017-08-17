@@ -423,12 +423,12 @@ if (!is_null($datas['id']))
 				 $profile_pic_url_hd = $jss->user->profile_pic_url_hd;
 
 				 $text1 = "Profil Instagram ".$data[1]."
-		Username : ".$data[1]."
-		ID : ".$jss->user->id."
-		Followers : ".$jss->user->followed_by->count."
-				Following : ".$jss->user->follows->count."
-				Post : ".$jss->user->media->count."
-				Bio : ".$jss->user->biography."";
+Username : ".$data[1]."
+ID : ".$jss->user->id."
+Followers : ".$jss->user->followed_by->count."
+Following : ".$jss->user->follows->count."
+Post : ".$jss->user->media->count."
+Bio : ".$jss->user->biography."";
 				$balas = array(
 					'replyToken' => $replyToken,
 					'messages' => array(
