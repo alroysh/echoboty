@@ -430,7 +430,9 @@ Following : ".$jss->user->follows->count."
 Post : ".$jss->user->media->count."
 Bio : ".$jss->user->biography."
 Website : ".$jss->user->external_url."
-Verified : ".$jss->user->is_verified."";
+Verified : ".$jss->user->is_verified."
+if ".$jss->user->is_verified:True
+	echo "Yes"";
 				$balas = array(
 					'replyToken' => $replyToken,
 					'messages' => array(
