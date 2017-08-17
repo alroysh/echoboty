@@ -50,7 +50,7 @@
 		$userx = $message['text'];
 		$data = explode(":", $userx);
 		$datac = "/ig:".$data[1]."";
-		$anu - explode("<tr class="head">", $userx);
+		$anu - explode("<tr class='head'>", $userx);
 		$datab = "qwerty";
 
 function CallLineGetName($access_token,$userId)
