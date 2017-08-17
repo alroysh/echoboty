@@ -425,8 +425,8 @@ if (!is_null($datas['id']))
 				 $text1 = "Profil Instagram ".$data[1]."
 	
 				Username : ".$data[1]."
-				Id : ".$jss->user->id."
-				bio : ".$jss->user->biography."
+				ID : ".$jss->user->id."
+				Bio : ".$jss->user->biography."
 				Followers : ".$jss->user->followed_by->count."
 				Following : ".$jss->user->follows>count."
 				Post : ".$jss->user->media->count."
