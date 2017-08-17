@@ -47,7 +47,9 @@
 		$random1 = (rand()%100);
 		$random2 = (rand()%200);
 		$random3 = (rand()%300);
-
+		$userx = $message['text'];
+		$data = explode("=" , $userx);
+		$datac = "/info-ig=".$data[1]."";
 
 function CallLineGetName($access_token,$userId)
 {
@@ -414,6 +416,37 @@ if (!is_null($datas['id']))
 									)
 								);
 			}
+		else
+				if($pesan_datang==$datac)
+				{
+				 $api_ig = file_get_contents("https://www.instagram.com/".$data[1]."/?___a=1");
+				 $jss = json_decode($api_ig);
+				 $profile_pic_url_hd = $jss->user->profile_pic_url_hd;
+
+				 $text1 = "Profil Instagram ".$data[1]."
+	
+				Username : ".$data[1]."
+				Id : ".$jss->user->id."
+				bio : ".$jss->user->biography."
+				Followers : ".$jss->user->followed_by->count"
+				Following : ".$jss->user->followers->count."
+				Post : ".$jss->user->mediia->count."
+				Bio : ".jss->user->biography."";
+				$balas = array(
+					'replyToken' => $replyToken,
+					'messages' => array(
+					array(
+					'type' => 'text'
+					'text' => $text1					
+					),
+					array(
+					'type' => 'image'
+					'originalContentUrl' => $profile_pic_url_hd,
+					'previewImageUrl' => $profile_pic_url_hd, 					
+					)
+					)
+					);				
+				}
 		else
 				if($pesan_datang=='/keyword')
 				{
