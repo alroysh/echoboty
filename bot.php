@@ -428,8 +428,8 @@ if (!is_null($datas['id']))
 				Id : ".$jss->user->id."
 				bio : ".$jss->user->biography."
 				Followers : ".$jss->user->followed_by->count."
-				Following : ".$jss->user->followers->count."
-				Post : ".$jss->user->mediia->count."
+				Following : ".$jss->user->follows>count."
+				Post : ".$jss->user->media->count."
 				Bio : ".$jss->user->biography."";
 				$balas = array(
 					'replyToken' => $replyToken,
