@@ -425,21 +425,21 @@ if (!is_null($datas['id']))
 				 $text1 = "Profil Instagram ".$data[1]."
 	
 				Username : ".$data[1]."
-				ID : ".$jss->user->id."
-				Bio : ".$jss->user->biography."
+				Id : ".$jss->user->id."
+				bio : ".$jss->user->biography."
 				Followers : ".$jss->user->followed_by->count."
-				Following : ".$jss->user->follows>count."
-				Post : ".$jss->user->media->count."
+				Following : ".$jss->user->followers->count."
+				Post : ".$jss->user->mediia->count."
 				Bio : ".$jss->user->biography."";
 				$balas = array(
 					'replyToken' => $replyToken,
 					'messages' => array(
 					array(
-					'type' => 'text',
+					'type' => 'text'
 					'text' => $text1					
 					),
 					array(
-					'type' => 'image',
+					'type' => 'image'
 					'originalContentUrl' => $profile_pic_url_hd,
 					'previewImageUrl' => $profile_pic_url_hd, 					
 					)
