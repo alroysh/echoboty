@@ -429,7 +429,7 @@ Followers : ".$jss->user->followed_by->count."
 Following : ".$jss->user->follows->count."
 Post : ".$jss->user->media->count."
 Bio : ".$jss->user->biography."
-Website :".$jss->user->external_url."";
+Website : ".$jss->user->external_url."";
 				$balas = array(
 					'replyToken' => $replyToken,
 					'messages' => array(
