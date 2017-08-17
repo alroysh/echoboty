@@ -49,7 +49,7 @@
 		$random3 = (rand()%300);
 		$userx = $message['text'];
 		$data = explode("=" , $userx);
-		$datac = "/info-ig=".$data[1]."";
+		$datac = "/ig".$data[1]."";
 
 function CallLineGetName($access_token,$userId)
 {
