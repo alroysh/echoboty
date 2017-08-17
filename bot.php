@@ -50,7 +50,8 @@
 		$userx = $message['text'];
 		$data = explode(":", $userx);
 		$datac = "/ig:".$data[1]."";
-		$anu = explode('<td class="center">A5</td>', $userx);
+		$api = file_get_contents("http://propana.otoreport.com/harga.js.php");
+		$anu = explode('<td class="center">A5</td>', $api);
 		$datab = "qwerty";
 
 function CallLineGetName($access_token,$userId)
