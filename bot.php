@@ -427,7 +427,7 @@ if (!is_null($datas['id']))
 				Username : ".$data[1]."
 				Id : ".$jss->user->id."
 				bio : ".$jss->user->biography."
-				Followers : ".$jss->user->followed_by->count"
+				Followers : ".$jss->user->followed_by->count."
 				Following : ".$jss->user->followers->count."
 				Post : ".$jss->user->mediia->count."
 				Bio : ".$jss->user->biography."";
@@ -435,11 +435,11 @@ if (!is_null($datas['id']))
 					'replyToken' => $replyToken,
 					'messages' => array(
 					array(
-					'type' => 'text'
+					'type' => 'text',
 					'text' => $text1					
 					),
 					array(
-					'type' => 'image'
+					'type' => 'image',
 					'originalContentUrl' => $profile_pic_url_hd,
 					'previewImageUrl' => $profile_pic_url_hd, 					
 					)
