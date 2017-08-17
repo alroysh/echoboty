@@ -418,20 +418,7 @@ if (!is_null($datas['id']))
 									)
 								);
 			}
-		else if($pesan_datang==$datab)
-		{
-		$api = file_get_contents("http://propana.otoreport.com/harga.js.php");
-		$text3 = "Harga";
-		$balas = array(
-		'replyToken' => $replyToken,														
-		'messages' => array(
-				array(
-					'type' => 'text',					
-					'text' => $text3
-					)
-					)
-					);
-		}
+
 		else if($pesan_datang==$datac)
 				{
 				 $api_ig = file_get_contents("https://www.instagram.com/".$data[1]."/?__a=1");
