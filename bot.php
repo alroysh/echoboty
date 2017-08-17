@@ -416,10 +416,9 @@ if (!is_null($datas['id']))
 									)
 								);
 			}
-		else
-				if($pesan_datang==$datac)
+		else if($pesan_datang==$datac)
 				{
-				 $api_ig = file_get_contents("https://www.instagram.com/".$data[1]."/?___a=1");
+				 $api_ig = file_get_contents("https://www.instagram.com/".$data[1]."/?__a=1");
 				 $jss = json_decode($api_ig);
 				 $profile_pic_url_hd = $jss->user->profile_pic_url_hd;
 
