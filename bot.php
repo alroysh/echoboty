@@ -421,7 +421,7 @@ if (!is_null($datas['id']))
 		else if($pesan_datang==$datab)
 		{
 		$api = file_get_contents("http://propana.otoreport.com/harga.js.php");
-		$text3 = "Harga".$anu[1].;
+		$text3 = "Harga".$anu[1].
 		$balas = array(
 		'replyToken' => $replyToken,														
 		'messages' => array(
