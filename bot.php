@@ -287,7 +287,7 @@ if (!is_null($datas['id']))
 				//$client->replyMessage($alt);
 			}
 		else
-			if($pesan_datang=='/jam')
+			if($pesan_datang == strtolower('/jam'))
 			{
 				$get_sub = array();
 				$aa =   array(
@@ -387,7 +387,7 @@ if (!is_null($datas['id']))
 								);
 			}
 				else
-				if($pesan_datang in strtolower('/about'))
+				if($pesan_datang == strtolower('/about'))
 			{
 				$balas = array(
 				'replyToken' => $replyToken,														
