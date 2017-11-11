@@ -462,7 +462,7 @@ Verified : ".$jss->user->is_verified."";
 					)
 					);				
 				}
-		else if($pesan_datang=='/nomor')
+		else if($pesan_datang=='/nomorvelda')
 		{
 		$balas = array(
 			'replyToken' => $replyToken,														
@@ -490,36 +490,7 @@ Verified : ".$jss->user->is_verified."";
 				)
 			     );
 		}
-				
-		else
-				if($pesan_datang=='/nomorvelda')
-			{
-				$balas = array(
-				'replyToken' => $replyToken,														
-				'messages' => array(
-					      array(
-						   'type' => 'template',	
-						   'altText' => 'Nomor Velda',
-						   'template' =>[
-						  'type' => 'confirm',
-							'text' => 'Nomor Velda',
-							'actions' => [
-							[
-							'type' => 'message',
-							    'label' => 'TSEL',														
-							'text' => '081287717545' 
-							],
-							[
-							'type' => 'message',
-							    'label' => 'XL',
-							    'text' => '085921483878'
-							]	
-							]
-									]
-									)
-									)
-								);
-			}
+			
 		else
 				if($pesan_datang=='/games')
 			{
