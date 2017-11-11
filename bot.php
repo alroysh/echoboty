@@ -387,7 +387,7 @@ if (!is_null($datas['id']))
 								);
 			}
 				else
-				if($pesan_datang in strtolower('/about'))
+				if(strtolower('/about') == $pesandatang)
 			{
 				$balas = array(
 				'replyToken' => $replyToken,														
