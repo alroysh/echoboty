@@ -552,7 +552,7 @@ Verified : ".$jss->user->is_verified."";
 								);
 			}
 	else
-				if($pesan_datang==$owner)
+				if($pesan_datang=="owner")
 			{
 				$balas = array(
 				'replyToken' => $replyToken,														
