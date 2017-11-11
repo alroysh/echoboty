@@ -490,7 +490,35 @@ Verified : ".$jss->user->is_verified."";
 				)
 			     );
 		}
-			
+		
+		else if($pesan_datang=='/test')
+		{
+		$balas = array(
+			'replyToken' => $replyToken,														
+			'messages' => array(
+				      	array(
+					'type' => 'template',	
+					'altText' => 'Nomor Velda',
+					'template' =>[
+					'type' => 'corusel',
+					"columns": [
+         					 {
+            					"title": "this is menu",
+            					"text": "description",
+						"actions": [
+							{
+							"type": "postback",
+                    					"label": "Buy",
+                    					"data": "action=buy&itemid=111"
+							}
+							]
+						 }
+						]
+					]
+				  )
+				)
+			     );
+		}			
 		else
 				if($pesan_datang=='/games')
 			{
