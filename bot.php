@@ -494,7 +494,7 @@ Verified : ".$jss->user->is_verified."";
 								);
 			}
 		else
-				if($pesan_datang=='/nomorvelda' && $pesandatang="/nomor velda")
+				if($pesan_datang=='/nomorvelda')
 			{
 				$balas = array(
 				'replyToken' => $replyToken,														
