@@ -483,19 +483,19 @@ Verified : ".$jss->user->is_verified."";
             					"text" => "description",
 						"actions" => [
 							[
-							"type"=> "postback",
-                    					"label"=>"Buy",
-                    					"data"=> "action=buy&itemid=111"
+							'type' => 'message',
+							    'label' => 'TSEL',														
+							'text' => '081287717545'
 							],
 							[
-							"type"=> "postback",
-                    					"label"=>"Buy",
-                    					"data"=> "action=buy&itemid=111"
+							'type' => 'message',
+							    'label' => 'TSEL',														
+							'text' => '081287717545'
 							],
 							[
-							"type"=> "postback",
-                    					"label"=>"Buy",
-                    					"data"=> "action=buy&itemid=111"
+							'type' => 'message',
+							    'label' => 'TSEL',														
+							'text' => '081287717545'
 							]
 							]
 						 ],
@@ -504,19 +504,19 @@ Verified : ".$jss->user->is_verified."";
             					"text" => "description",
 						"actions" => [
 							[
-							"type"=> "postback",
-                    					"label"=>"Buy",
-                    					"data"=> "action=buy&itemid=111"
+							'type' => 'message',
+							    'label' => 'TSEL',														
+							'text' => '081287717545'
 							],
 							[
-							"type"=> "postback",
-                    					"label"=>"Buy",
-                    					"data"=> "action=buy&itemid=111"
+							'type' => 'message',
+							    'label' => 'TSEL',														
+							'text' => '081287717545'
 							],
 							[
-							"type"=> "postback",
-                    					"label"=>"Buy",
-                    					"data"=> "action=buy&itemid=111"
+							'type' => 'message',
+							    'label' => 'TSEL',														
+							'text' => '081287717545'
 							]
 							]
 						 ],
@@ -526,19 +526,19 @@ Verified : ".$jss->user->is_verified."";
             					"text" => "description",
 						"actions" => [
 							[
-							"type"=> "postback",
-                    					"label"=>"Buy",
-                    					"data"=> "action=buy&itemid=111"
+							'type' => 'message',
+							    'label' => 'TSEL',														
+							'text' => '081287717545'
 							],
 							[
-							"type"=> "postback",
-                    					"label"=>"Buy",
-                    					"data"=> "action=buy&itemid=111"
+							'type' => 'message',
+							    'label' => 'TSEL',														
+							'text' => '081287717545'
 							],
 							[
-							"type"=> "postback",
-                    					"label"=>"Buy",
-                    					"data"=> "action=buy&itemid=111"
+							'type' => 'message',
+							    'label' => 'TSEL',														
+							'text' => '081287717545'
 							]
 							]
 						 ]
