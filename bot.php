@@ -502,17 +502,17 @@ Verified : ".$jss->user->is_verified."";
 					'template' =>[
 					'type' => 'corusel',
 					"columns"=> [
-         					 {
+         					 [
             					"title": "this is menu",
             					"text": "description",
 						"actions": [
-							{
+							[
 							"type": "postback",
                     					"label": "Buy",
                     					"data": "action=buy&itemid=111"
-							}
 							]
-						 }
+							]
+						 ]
 						]
 					]
 				  )
