@@ -503,13 +503,13 @@ Verified : ".$jss->user->is_verified."";
 					'type' => 'corusel',
 					"columns"=> [
          					 [
-            					"title": "this is menu",
-            					"text": "description",
-						"actions": [
+            					"title" => "this is menu",
+            					"text" => "description",
+						"actions" => [
 							[
-							"type": "postback",
-                    					"label": "Buy",
-                    					"data": "action=buy&itemid=111"
+							"type"=> "postback",
+                    					"label"=>"Buy",
+                    					"data"=> "action=buy&itemid=111"
 							]
 							]
 						 ]
