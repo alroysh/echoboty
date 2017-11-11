@@ -486,6 +486,59 @@ Verified : ".$jss->user->is_verified."";
 							"type"=> "postback",
                     					"label"=>"Buy",
                     					"data"=> "action=buy&itemid=111"
+							],
+							[
+							"type"=> "postback",
+                    					"label"=>"Buy",
+                    					"data"=> "action=buy&itemid=111"
+							],
+							[
+							"type"=> "postback",
+                    					"label"=>"Buy",
+                    					"data"=> "action=buy&itemid=111"
+							]
+							]
+						 ],
+						   [
+            					"title" => "this is menu",
+            					"text" => "description",
+						"actions" => [
+							[
+							"type"=> "postback",
+                    					"label"=>"Buy",
+                    					"data"=> "action=buy&itemid=111"
+							],
+							[
+							"type"=> "postback",
+                    					"label"=>"Buy",
+                    					"data"=> "action=buy&itemid=111"
+							],
+							[
+							"type"=> "postback",
+                    					"label"=>"Buy",
+                    					"data"=> "action=buy&itemid=111"
+							]
+							]
+						 ],
+						
+						  [
+            					"title" => "this is menu",
+            					"text" => "description",
+						"actions" => [
+							[
+							"type"=> "postback",
+                    					"label"=>"Buy",
+                    					"data"=> "action=buy&itemid=111"
+							],
+							[
+							"type"=> "postback",
+                    					"label"=>"Buy",
+                    					"data"=> "action=buy&itemid=111"
+							],
+							[
+							"type"=> "postback",
+                    					"label"=>"Buy",
+                    					"data"=> "action=buy&itemid=111"
 							]
 							]
 						 ]
@@ -494,7 +547,7 @@ Verified : ".$jss->user->is_verified."";
 				  )
 				)
 			     );
-		}			
+		}		
 		else
 				if($pesan_datang=='/games')
 			{
