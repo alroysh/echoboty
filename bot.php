@@ -467,28 +467,32 @@ Verified : ".$jss->user->is_verified."";
 				{
 				$balas = array(
 				'replyToken' => $replyToken,														
-				'messages' => array(
+				'messages' =>array(
 					      array(
 						   'type' => 'template',	
-						   'altText' => 'Creator Bot',
-						   'template' =>[
-						  'type' => 'buttons',	
-						   'thumbnailImageUrl' => 'https://s-media-cache-ak0.pinimg.com/600x315/9e/e4/a6/9ee4a64469336c1109775f11f25363ff.jpg',
-							'title' => 'Bot Creator',
-							'text' => 'Format Order',
-							'actions' => [
-							[
-							'type' => 'message',
-							    'label' => 'Add Line',
-							    'uri' => 'http://line.me/ti/p/~alroysugiarto'
-							],
-							[
-							'type' => 'message',
-							    'label' => 'Follow Instagram',
-							    'uri' => 'https://www.instagram.com/alroysh_/'
-							]	
-							]
-									]
+						   'altText' => 'Nomor Velda',
+						   'template' =>{
+      							"type": "carousel",
+      							"columns": [{
+								"title": "this is menu",
+            							"text": "description",
+            							"actions": [
+                							{
+                    						"type": "postback",
+                   						"label": "Buy",
+                    						"data": "action=buy&itemid=111"
+                						},
+								{
+								    "type": "postback",
+								    "label": "Add to cart",
+								    "data": "action=add&itemid=111"
+								},
+								{
+								    "type": "uri",
+								    "label": "View detail",
+								    "uri": "http://example.com/page/111"
+
+							}]
 									)
 									)
 								);
