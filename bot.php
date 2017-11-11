@@ -386,8 +386,8 @@ if (!is_null($datas['id']))
 									)
 								);
 			}
-				else
-				if($pesandatang  == "/about")
+			else
+				if($pesandatang  == '/about')
 			{
 				$balas = array(
 				'replyToken' => $replyToken,														
@@ -396,7 +396,7 @@ if (!is_null($datas['id']))
 						   'type' => 'template',	
 						   'altText' => 'Creator Bot',
 						   'template' =>[
-						  'type' => 'buttons',	
+						   'type' => 'buttons',	
 						   'thumbnailImageUrl' => 'https://s-media-cache-ak0.pinimg.com/600x315/9e/e4/a6/9ee4a64469336c1109775f11f25363ff.jpg',
 							'title' => 'Bot Creator',
 							'text' => 'Created by alroysh_',
