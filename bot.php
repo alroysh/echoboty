@@ -34,7 +34,7 @@
 		$message 	= $client->parseEvents()[0]['message'];
 		$messageid 	= $client->parseEvents()[0]['message']['id'];
 		$profil = $client->profil($userId);
-		$pesan_datang = $message['text'];
+		$pesan_datang = strtolower($message['text']);
 		$jam = date("H.i.s");
 		$ip = $_SERVER['REMOTE_ADDR'];
 		$browser= $_SERVER['HTTP_USER_AGENT'];
