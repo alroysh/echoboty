@@ -477,7 +477,7 @@ Verified : ".$jss->user->is_verified."";
 								"title": "this is menu",
             							"text": "description",
             							"actions": [
-                							{
+                						{
                     						"type": "postback",
                    						"label": "Buy",
                     						"data": "action=buy&itemid=111"
@@ -491,8 +491,8 @@ Verified : ".$jss->user->is_verified."";
 								    "type": "uri",
 								    "label": "View detail",
 								    "uri": "http://example.com/page/111"
-
-							}]
+								}]}
+								]
 									)
 									)
 								);
