@@ -501,7 +501,7 @@ Verified : ".$jss->user->is_verified."";
 					'altText' => 'Nomor Velda',
 					'template' =>[
 					'type' => 'corusel',
-					"columns": [
+					"columns"=> [
          					 {
             					"title": "this is menu",
             					"text": "description",
