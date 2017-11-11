@@ -361,7 +361,7 @@ if (!is_null($datas['id']))
 								);
 			}
 					else
-				if($pesan_datang=='/coba')
+				if($pesan_datang=='/about')
 			{
 				$balas = array(
 				'replyToken' => $replyToken,														
@@ -391,38 +391,9 @@ if (!is_null($datas['id']))
 									)
 								);
 			}
-			else
-				if($pesandatang  == '/about')
-			{
-				$balas = array(
-				'replyToken' => $replyToken,														
-				'messages' => array(
-					      array(
-						   'type' => 'template',	
-						   'altText' => 'Creator Bot',
-						   'template' =>[
-						   'type' => 'buttons',	
-						   'thumbnailImageUrl' => 'https://s-media-cache-ak0.pinimg.com/600x315/9e/e4/a6/9ee4a64469336c1109775f11f25363ff.jpg',
-							'title' => 'Bot Creator',
-							'text' => 'Created by alroysh_',
-							'actions' => [
-							[
-							'type' => 'uri',
-							    'label' => 'Add Line',
-							    'uri' => 'http://line.me/ti/p/~alroysh'
-							],
-							[
-							'type' => 'uri',
-							    'label' => 'Follow Instagram',
-							    'uri' => 'https://www.instagram.com/alroysh_/'
-							]	
-							]
-									]
-									)
-									)
-								);
-			}
-		else if($pesan_datang==$datab)
+
+		else 
+			if($pesan_datang==$datab)
 		{
 		$api_wiki = file_get_contents("https://id.wikipedia.org/wiki/".$data[1]."/?__a=1");
 		$jss = json_decode($api_wiki);
