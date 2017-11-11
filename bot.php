@@ -387,7 +387,7 @@ if (!is_null($datas['id']))
 								);
 			}
 				else
-				if($pesan_datang == strtolower('/about'))
+				if($pesan_datang in strtolower('/about'))
 			{
 				$balas = array(
 				'replyToken' => $replyToken,														
@@ -404,7 +404,7 @@ if (!is_null($datas['id']))
 							[
 							'type' => 'uri',
 							    'label' => 'Add Line',
-							    'uri' => 'http://line.me/ti/p/~alroysugiarto'
+							    'uri' => 'http://line.me/ti/p/~alroysh'
 							],
 							[
 							'type' => 'uri',
