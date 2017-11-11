@@ -463,41 +463,6 @@ Verified : ".$jss->user->is_verified."";
 					);				
 				}
 		else
-				if($pesan_datang=='/keyword')
-				{
-				$balas = array(
-				'replyToken' => $replyToken,														
-				'messages' =>array(
-					      array(
-						   'type' => 'template',	
-						   'altText' => 'Nomor Velda',
-						   'template' =>{
-      							"type": "carousel",
-      							"columns": [{
-								"title": "this is menu",
-            							"text": "description",
-            							"actions": [
-                						{
-                    						"type": "postback",
-                   						"label": "Buy",
-                    						"data": "action=buy&itemid=111"
-                						},
-								{
-								    "type": "postback",
-								    "label": "Add to cart",
-								    "data": "action=add&itemid=111"
-								},
-								{
-								    "type": "uri",
-								    "label": "View detail",
-								    "uri": "http://example.com/page/111"
-								}]}
-								]
-									)
-									)
-								);
-			}
-		else
 				if($pesan_datang=='/nomorvelda')
 			{
 				$balas = array(
