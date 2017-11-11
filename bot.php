@@ -368,18 +368,23 @@ if (!is_null($datas['id']))
 				'messages' => array(
 					      array(
 						   'type' => 'template',	
-						   'altText' => 'Movies',
+						   'altText' => 'Creator Bot',
 						   'template' =>[
-						  'type' => 'buttons',	
-						   'thumbnailImageUrl' => 'https://s-media-cache-ak0.pinimg.com/236x/0c/cd/6a/0ccd6a5e74067bab2d43b4c3e7501fd1.jpg',
-							'title' => 'Movies',
-							'text' => 'Tempat Download Film',
+						   'type' => 'buttons',	
+						   'thumbnailImageUrl' => 'https://s-media-cache-ak0.pinimg.com/600x315/9e/e4/a6/9ee4a64469336c1109775f11f25363ff.jpg',
+							'title' => 'Bot Creator',
+							'text' => 'Created by alroysh_',
 							'actions' => [
 							[
-							'type' => 'uri',
-							    'label' => 'Detalis',
-							    'uri' => 'http://lk21.org'
-							]
+							    'type' => 'uri',
+							    'label' => 'Add Line',
+							    'uri' => 'http://line.me/ti/p/~alroysh'
+							],
+							[
+							    'type' => 'uri',
+							    'label' => 'Follow Instagram',
+							    'uri' => 'https://www.instagram.com/alroysh_/'
+							]	
 							]
 									]
 									)
